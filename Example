@@ -1,6 +1,6 @@
 package main
 
-import "fmt", "rand"
+import "fmt", "rand", "pow"
 
 func main() {
   var max int = 1000000000000000000000000000
@@ -10,14 +10,14 @@ func main() {
   for % p != 0 {p--}; for % q != 0 {q--}
   var n = p * q
   var e int = rand.Int((min-1)-(min/2))
-  var d int = !% e ** n
+  var d int = !% e pow (n)
   var Chiffrat string = ""
   var m uint8
   var Zähler int
 
   for Zähler < len(Text) {
     m = Text[Zähler]
-    Chiffrat = Chiffrat + string(m ** e)
+    Chiffrat = Chiffrat + string(m ow (e))
     Zähler++
   }
 
